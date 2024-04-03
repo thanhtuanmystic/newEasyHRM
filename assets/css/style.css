@@ -7,12 +7,15 @@
 img {
   max-width: 100%;
 }
+a {
+  text-decoration: none !important;
+}
 header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  height: 100px;
+  height: 74px;
   background-color: #fff;
   width: 100%;
   display: flex;
@@ -38,13 +41,13 @@ header {
 #hrm_body {
   background-image: url(../img/background1920.png);
   min-height: 100vh;
-  padding-top: 235px;
+  padding-top: 160px;
   background-size: cover;
 }
 .hrm-search {
   display: flex;
   width: 606px;
-  padding: 16px 20px;
+
   align-items: center;
   gap: 16px;
   border-radius: 40px;
@@ -57,6 +60,7 @@ header {
 }
 .hrm-search input {
   width: 100%;
+  padding: 16px 20px;
   border: none;
   color: var(--Basic-3, #9ba3b1);
   font-family: "Roboto", sans-serif;
@@ -64,6 +68,11 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background: url(../img/search-icon.png) no-repeat scroll 5%;
+  padding-left: 13%;
+}
+.hrm-search input:focus {
+  outline: none;
 }
 .module-row {
   display: flex;
@@ -78,7 +87,7 @@ header {
 
 .module-box {
   display: flex;
-  padding: 24px;
+  padding: 24px 10px;
   width: 145px;
   height: 208px;
   flex-direction: column;
@@ -87,13 +96,25 @@ header {
   border-radius: 32px;
   border: 1px solid var(--Basic-3, #9ba3b1);
   background: #fff;
+  color: var(--Secondary-Xanh, #2951a0);
+
+}
+.module-box:hover {
+  border-radius: 24px;
+  border: 1px solid var(--Basic-3, #9ba3b1);
+  background: var(--Secondary-Xanh-navy, #172d58);
+  color: #fff;
 }
 .module-name {
-  color: var(--Secondary-Xanh, #2951a0);
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px; /* 130% */
+}
+@media (max-width: 1440px) {
+  .module-row {
+    gap: 30px;
+  }
 }
