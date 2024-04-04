@@ -15,29 +15,44 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container-custom">
         <div class="header-wrap">
           <div class="logo">
             <img src="./assets/img/logo.png" alt="" />
           </div>
           <div class="user">
             <div class="user-noti">
+              <div class="noti-count">2</div>
               <img src="./assets/img/noti-icon.png" alt="" />
             </div>
-            <div class="user-avatar">
+            <div class="user-avatar avt-dropdown">
               <img src="./assets/img/avatar.png" alt="" />
+              <div class="avt-dropdown-content">
+                <a href="#"
+                  ><img src="./assets/img/User.png" alt="" />Thông tin</a
+                >
+                <a href="#"
+                  ><img src="./assets/img/language-icon.png" />Ngôn ngữ: Tiếng việt</a
+                >
+                <a href="#"
+                  ><img src="./assets/img/changepass.png" />Đổi mật khẩu</a
+                >
+                <a class="user-logout" href="#">
+                  <img src="./assets/img/userlogout.png" alt="" />Đăng xuất</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
     <section id="hrm_body">
-      <div class="container">
+      <div class="container-custom">
         <div class="hrm-search">
           <input type="text" placeholder="Tìm kiếm ứng dụng" />
         </div>
-        <div class="content-test">
-          <div class="content-left">
+        <div class="body-content">
+          <div class="body-content-left">
             <div class="hrm-module">
               <div class="module-row">
                 <a href="">
@@ -105,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="content-right">
+          <div class="body-content-right">
             <img
               class="object-right"
               src="./assets/img/object-right.png"
@@ -116,4 +131,13 @@
       </div>
     </section>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".avt-dropdown-content").hide();
+      $(".avt-dropdown").on("click", function () {
+        $(".avt-dropdown-content").slideToggle();
+      });
+    });
+  </script>
 </html>
