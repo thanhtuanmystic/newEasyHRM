@@ -36,13 +36,13 @@ header {
   align-items: center;
 }
 .container-custom {
-  padding: 0 100px;
+  padding: 0 320px;
   width: 100%;
 }
 #hrm_body {
   background-image: url(../img/background1920.png);
   min-height: 100vh;
-  padding-top: 140px;
+  padding-top: 200px;
   background-size: cover;
 }
 .hrm-search {
@@ -218,14 +218,16 @@ header {
 .user-logout:hover {
   opacity: 0.9;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .module-row {
     gap: 30px;
   }
   #hrm_body {
     padding-top: 140px;
   }
- 
+  .container-custom {
+    padding: 0 140px;
+  }
 }
 @media (max-width: 1024px) {
   .object-right {
