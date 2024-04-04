@@ -76,13 +76,13 @@ header {
 }
 .module-row {
   display: flex;
-  gap: 36px;
+  gap: 30px;
 }
 .hrm-module {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 
 .module-box {
@@ -112,8 +112,20 @@ header {
   font-weight: 700;
   line-height: 26px; /* 130% */
 }
+
+.content-test {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
 @media (max-width: 1440px) {
   .module-row {
     gap: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .object-right {
+    display: none;
   }
 }
