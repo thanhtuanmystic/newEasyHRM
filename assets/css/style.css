@@ -15,7 +15,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  height: 74px;
+  height: 66px;
   background-color: #fff;
   width: 100%;
   display: flex;
@@ -35,7 +35,7 @@ header {
   align-items: center;
 }
 .container-custom {
-  padding: 0 120px;
+  padding: 0 200px;
   width: 100%;
 }
 #hrm_body {
@@ -47,7 +47,7 @@ header {
 .hrm-search {
   display: flex;
   width: 606px;
-
+  height: 48px;
   align-items: center;
   gap: 16px;
   border-radius: 40px;
@@ -88,8 +88,8 @@ header {
 .module-box {
   display: flex;
   padding: 24px 10px;
-  width: 145px;
-  height: 208px;
+  width: 126px;
+  height: 188px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -97,7 +97,6 @@ header {
   border: 1px solid var(--Basic-3, #9ba3b1);
   background: #fff;
   color: var(--Secondary-Xanh, #2951a0);
-
 }
 .module-box:hover {
   border-radius: 24px;
@@ -108,7 +107,7 @@ header {
 .module-name {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px; /* 130% */
