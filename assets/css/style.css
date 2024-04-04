@@ -36,13 +36,13 @@ header {
   align-items: center;
 }
 .container-custom {
-  padding: 0 320px;
+  padding: 0 100px;
   width: 100%;
 }
 #hrm_body {
   background-image: url(../img/background1920.png);
   min-height: 100vh;
-  padding-top: 200px;
+  padding-top: 140px;
   background-size: cover;
 }
 .hrm-search {
@@ -225,9 +225,7 @@ header {
   #hrm_body {
     padding-top: 140px;
   }
-  .container-custom {
-    padding: 0 140px;
-  }
+ 
 }
 @media (max-width: 1024px) {
   .object-right {
